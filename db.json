@@ -1,0 +1,75 @@
+{
+      "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "a@a",
+      "password": "123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "b@b",
+      "password": "456",
+      "role": "client"
+    },
+    {
+      "id": "3",
+      "name": "Alice Johnson",
+      "email": "c@c",
+      "password": "789",
+      "role": "client"
+    },
+    {
+      "id": "4",
+      "name": "Bob Brown",
+      "email": "d@d",
+        "password": "101112",
+      "role": "client"
+    }
+  ],
+  "products": [
+   {
+      "id": "1",
+      "name": "Product A",
+      "price": 100,
+      "category": "Category 1"
+    },
+    {
+      "id": "2",
+      "name": "Product B",
+      "price": 200,
+      "category": "Category 2"
+    },
+    {
+      "id": "3",
+      "name": "Product C",
+      "price": 300,
+      "category": "Category 3"
+    }
+  ],
+  "ventas": [
+    {
+      "id": "1",
+      "productId": "1",
+      "clientId": "1",
+      "date": "2023-01-01",
+      "quantity": 2
+    },
+    {
+      "id": "2",
+      "productId": "2",
+      "clientId": "2",
+      "date": "2023-01-02",
+      "quantity": 1
+    },
+    {
+      "id": "3",
+      "productId": "3",
+      "clientId": "3",
+      "date": "2023-01-03",
+      "quantity": 5
+    }
+  ]
+}
