@@ -1,14 +1,12 @@
-// src/components/ProductCarousel.jsx
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "../styles/productCarousel.css"; 
+import "../styles/productCarousel.css";
+import { Button } from "react-bootstrap";
 
 const ProductCarousel = ({ products }) => {
-
   return (
     <section id="carrusel">
       <div className="container">
@@ -40,10 +38,13 @@ const ProductCarousel = ({ products }) => {
         >
           {products.map((product, index) => (
             <SwiperSlide key={index}>
-              <div className="product-card">
+              <div className="product-card py-3">
                 <img src={product.image} alt={product.name} />
                 <h4>{product.name}</h4>
-                <p>{product.description}</p>
+                <div className="d-flex justify-content-center align-items-center gap-2 mt-2">
+                  <Button variant="outline-dark">Comprar</Button>
+                  <p className="mb-0">${product.price}</p>
+                </div>
               </div>
             </SwiperSlide>
           ))}

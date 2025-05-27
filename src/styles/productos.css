@@ -4,18 +4,15 @@
   background-color: #e65b5b;
   margin-top: 20px;
   clip-path: polygon(
-    0 10%,     /* empieza 10% desde arriba a la izquierda */
-    100% 0%,   /* arriba a la derecha */
-    100% 100%, /* abajo a la derecha */
-    0% 100%    /* abajo a la izquierda */
+    0 10%,     
+    100% 0%,   
+    100% 100%, 
+    0% 100%    
   );
-  padding: 20px 20px 40px; /* para dar espacio al contenido y que no quede cortado */
-  /* color: white; */
-  min-height: 300px; /* ajusta el alto que necesites */
-
+  padding: 20px 20px 40px; 
+  min-height: 300px; 
 }
 .container-products h2 {
   color: white;
-  /* font-size: 24px; */
   margin-bottom: 20px;
 }

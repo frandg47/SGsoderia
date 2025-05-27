@@ -4,6 +4,7 @@ import "../styles/services.css";
 const Services = () => {
   return (
     <section className="services-section">
+      <h2 className="mb-5 text-light">Nuestros Servicios</h2>
       <div className="services-container">
         <div className="service-card">
           <img

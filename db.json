@@ -35,35 +35,35 @@
       "name": "Coca-Cola",
       "price": 100,
       "category": "Gaseosas",
-      "image": "cocacola.jpg"
+      "image": "/productsimages/cocacola.jpg"
     },
     {
       "id": "2",
       "name": "Agua Tónica Scheweppes",
       "price": 200,
       "category": "Aguas",
-      "image": "aguatonica.png"
+      "image": "/productsimages/aguatonica.png"
     },
     {
       "id": "3",
       "name": "Soda Bretaña",
       "price": 300,
       "category": "soda",
-      "image": "soda.webp"
+      "image": "/productsimages/soda.webp"
     },
     {
       "id": "4",
       "name": "Soda Costa",
       "price": 400,
       "category": "Galletas",
-      "image": "sodagalleta.webp"
+      "image": "/productsimages/sodagalleta.webp"
     },
     {
       "id": "d62f",
       "name": "Soda Cisca",
       "price": "2500",
       "category": "soda",
-      "image": "sodasifon.jpg"
+      "image": "/productsimages/sodasifon.jpg"
     }
   ],
   "ventas": [
