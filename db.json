@@ -32,21 +32,38 @@
   "products": [
     {
       "id": "1",
-      "name": "Product A",
+      "name": "Coca-Cola",
       "price": 100,
-      "category": "Category 1"
+      "category": "Gaseosas",
+      "image": "cocacola.jpg"
     },
     {
       "id": "2",
-      "name": "Product B",
+      "name": "Agua Tónica Scheweppes",
       "price": 200,
-      "category": "Category 2"
+      "category": "Aguas",
+      "image": "aguatonica.png"
     },
     {
       "id": "3",
-      "name": "Product C",
+      "name": "Soda Bretaña",
       "price": 300,
-      "category": "Category 3"
+      "category": "soda",
+      "image": "soda.webp"
+    },
+    {
+      "id": "4",
+      "name": "Soda Costa",
+      "price": 400,
+      "category": "Galletas",
+      "image": "sodagalleta.webp"
+    },
+    {
+      "id": "d62f",
+      "name": "Soda Cisca",
+      "price": "2500",
+      "category": "soda",
+      "image": "sodasifon.jpg"
     }
   ],
   "ventas": [
