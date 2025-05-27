@@ -31,7 +31,7 @@ const Navbar = () => {
           Inicio
         </Link>
         <Link
-          to="/proyectos"
+          to="/productos"
           className={isActive("/productos") ? "active-link" : ""}
           onClick={() => setMenuOpen(false)}
         >
