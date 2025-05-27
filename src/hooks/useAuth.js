@@ -24,6 +24,7 @@ export function useAuth() {
     if (user) {
       setIsAuthenticated(true);
       localStorage.setItem("isAuthenticated", "true");
+      localStorage.setItem("user", JSON.stringify(user));
       return true;
     }
 
@@ -33,6 +34,7 @@ export function useAuth() {
   const logout = () => {
     setIsAuthenticated(false);
     localStorage.removeItem("isAuthenticated");
+    localStorage.removeItem("user");
   };
 
   return { isAuthenticated, login, logout, loading };

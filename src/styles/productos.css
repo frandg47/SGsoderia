@@ -1,0 +1,18 @@
+.container-products {
+  justify-content: center;
+  gap: 20px;
+  background-color: #e65b5b;
+  margin-top: 20px;
+  clip-path: polygon(
+    0 10%,     
+    100% 0%,   
+    100% 100%, 
+    0% 100%    
+  );
+  padding: 20px 20px 40px; 
+  min-height: 300px; 
+}
+.container-products h2 {
+  color: white;
+  margin-bottom: 20px;
+}
