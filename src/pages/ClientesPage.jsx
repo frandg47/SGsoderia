@@ -1,8 +1,13 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import ClientTable from '../components/ClientTable'
 
 const ClientesPage = () => {
   return (
-    <div>ClientesPage</div>
+    <div>
+      <Navbar />
+      <ClientTable />
+    </div>
   )
 }
 

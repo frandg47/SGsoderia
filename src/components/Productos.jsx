@@ -9,11 +9,12 @@ const Productos = () => {
   console.log("Products data:", products);
 
   return (
-    <div className="container-products">
-        
-      <h2 className="text-center my-5">Productos</h2>
-      {loading ? <p>Cargando productos...</p> : <ProductCarousel products={products} loading={loading} />}
-    </div>
+    <section id="productos">
+      <div className="container-products">
+        <h2 className="text-center my-5">Productos</h2>
+        {loading ? <p>Cargando productos...</p> : <ProductCarousel products={products} loading={loading} />}
+      </div>
+    </section>
   );
 };
 

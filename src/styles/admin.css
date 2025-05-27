@@ -1,0 +1,12 @@
+.titulo-admin {
+    margin-top: 100px;
+}
+
+.btn-admin {
+    background: #FF6B6B !important;
+    border: none !important;
+}
+
+.btn-admin:hover {
+  background: #e65b5b !important;
+}

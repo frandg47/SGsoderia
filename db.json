@@ -22,11 +22,11 @@
       "role": "client"
     },
     {
-      "id": "4",
-      "name": "Bob Brown",
+      "name": "Hector Timo",
       "email": "d@d",
-      "password": "101112",
-      "role": "client"
+      "role": "client",
+      "password": "123",
+      "id": "4"
     }
   ],
   "products": [
