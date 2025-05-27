@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/navbar.css";
+import { useAuth } from "../hooks/useAuth";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const { logout } = useAuth();
 
   const isActive = (path) => {
     if (path === "/proyectos") {
@@ -14,7 +16,11 @@ const Navbar = () => {
     return location.pathname === path;
   };
 
-  
+  const handleLogout = () => {
+    setMenuOpen(false);
+    logout();
+    navigate("/");
+  };
 
   return (
     <header className="main-header">
@@ -53,7 +59,7 @@ const Navbar = () => {
         </Link>
         <button
           className="btn btn-outline-danger"
-          onClick={() => setMenuOpen(false)}
+          onClick={handleLogout}
         >
           Salir
         </button>
