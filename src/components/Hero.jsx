@@ -11,7 +11,7 @@ const Hero = () => {
       </video>
 
       <div className="hero-content text-center">
-        <h1>Refrescá tu día con <br /><span className="highlight">Los Causas</span></h1>
+        <h1>Refrescá tu día con <br /><span className="highlight">AquaTech</span></h1>
         <p>Las sodas artesanales más frescas y burbujeantes</p>
         <Link to="/productos" className="btn-hero">
           Ver productos

@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/navbar.css";
 import { useAuth } from "../hooks/useAuth";
+import { FaUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const { logout } = useAuth();
+  const user = JSON.parse(localStorage.getItem("user"));
 
   const isActive = (path) => {
     if (path === "/proyectos") {
@@ -24,27 +26,27 @@ const Navbar = () => {
 
   return (
     <header className="main-header">
-      <span className="main-logo" onClick={() => navigate("/home")}>
-        <img src="/LOGO 2.png" alt="logo" width={100} height={50} />
+      <span className="main-logo text-light" onClick={() => navigate("/home")}>
+        <img src="/AquaTech-removebg.png" alt="logo" />
       </span>
 
       <nav className={`main-navbar ${menuOpen ? "menu-active" : ""}`}>
         <Link
-          to="/"
+          to="/home"
           className={isActive("/home") ? "active-link" : ""}
           onClick={() => setMenuOpen(false)}
         >
           Inicio
         </Link>
         <Link
-          to="/proyectos"
+          to="/productos"
           className={isActive("/productos") ? "active-link" : ""}
           onClick={() => setMenuOpen(false)}
         >
           Productos
         </Link>
         <Link
-        to={"/clientes"}
+          to={"/clientes"}
           className="link-button"
           onClick={() => setMenuOpen(false)}
         >
@@ -57,13 +59,27 @@ const Navbar = () => {
         >
           Ventas
         </Link>
-        <button
-          className="btn btn-outline-danger"
-          onClick={handleLogout}
-        >
+
+        <div className="menu-user-controls d-md-none">
+          <span className="user-info d-flex align-items-center">
+            <FaUserCircle className="fs-4 mx-2" />
+            <span className="user-name">{user?.name || "Usuario"}</span>
+          </span>
+          <button className="btn btn-outline-danger" onClick={handleLogout}>
+            Salir
+          </button>
+        </div>
+      </nav>
+
+      <div className="user-controls text-light">
+        <span className="user-info px-2 d-flex align-items-center">
+          <FaUserCircle className="fs-3 mx-2" />
+          <span className="user-name mx-1">{user?.name || "Usuario"}</span>
+        </span>
+        <button className="btn btn-outline-danger" onClick={handleLogout}>
           Salir
         </button>
-      </nav>
+      </div>
 
       <div
         className={`main-menu-toggle ${menuOpen ? "toggle-open" : ""}`}
