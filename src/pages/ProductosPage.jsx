@@ -1,13 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import TablaProductosAdm from '../components/TablaProductosAdm'
+import ProductTable from '../components/TablaProductosAdm'
 
 const ProductosPage = () => {
   return (
     <div>
       <Navbar />
-      <TablaProductosAdm />
-      ProductosPage
+      <ProductTable />
     </div>
   )
 }

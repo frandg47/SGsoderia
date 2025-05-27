@@ -11,7 +11,7 @@ const AdminPage = () => {
     <>
       <Navbar />
       <div className="container titulo-admin mb-5">
-        <h1 className="text-center">AdminPage</h1>
+        <h1 className="text-center">Administración</h1>
         <Card className="mt-5 mb-3">
           <Card.Header as="h5">Productos</Card.Header>
           <Card.Body>

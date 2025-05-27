@@ -59,11 +59,18 @@
       "image": "/productsimages/sodagalleta.webp"
     },
     {
-      "id": "d62f",
       "name": "Soda Cisca",
-      "price": "2500",
+      "price": "2600",
       "category": "soda",
-      "image": "/productsimages/sodasifon.jpg"
+      "image": "/productsimages/sodasifon.jpg",
+      "id": "d62f"
+    },
+    {
+      "id": "e50a",
+      "name": "agua bidon",
+      "category": "Aguas",
+      "price": "600",
+      "image": "/aguas"
     }
   ],
   "ventas": [
