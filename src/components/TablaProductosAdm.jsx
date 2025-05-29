@@ -113,6 +113,7 @@ const ProductTable = () => {
               <th>Nombre</th>
               <th>Precio</th>
               <th>Categoria</th>
+              <th>Stock</th>
               <th>Imagen</th>
               <th>Acciones</th>
             </tr>
@@ -124,6 +125,7 @@ const ProductTable = () => {
                 <td>{product.name}</td>
                 <td>{product.price}</td>
                 <td>{product.category}</td>
+                <td>{product.stock}</td>
                 <td>
                   <img
                     src={product.image}
