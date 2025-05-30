@@ -1,0 +1,70 @@
+.cart {
+  background: rgba(0, 0, 0, 0.95);
+  color: white;
+  display: none;
+  padding: 32px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 9998;
+}
+
+
+.cart img {
+    height: 100px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    align-self: center;
+    /* width: auto; */
+}
+
+.cart li {
+    border-bottom: 1px solid #444;
+    padding-bottom: 16px;
+    text-decoration: none;
+}
+
+.cart footer {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart footer button {
+    padding: 8px;
+}
+
+.cart-button {
+    align-items: center;
+    background: #FF6B6B;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    padding: 4px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    transition: all .3s ease;
+    width: 50px;
+    z-index: 9999;
+}
+
+.cart-button:hover {
+    scale: 1.1;
+    background: #e65b5b;
+}
+
+.cart-button ~ input:checked ~ .cart {
+    height: 100%;
+    display: block;
+}
+
+.cart-button ~ input:checked ~ .cart + .cart-button {
+  transform: translateX(-300px); 
+}

@@ -6,10 +6,12 @@ import VentasPage from "./pages/VentasPage";
 import ClientesPage from "./pages/ClientesPage";
 import AdminPage from "./pages/AdminPage";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Cart from "./components/Cart";
 
 function App() {
   return (
     <>
+      <Cart />
       <Routes>
         <Route path="/" element={<LoginPage />} />
          <Route
