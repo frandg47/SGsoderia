@@ -5,8 +5,17 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../styles/productCarousel.css";
 import { Button } from "react-bootstrap";
+import { useCart } from "../hooks/useCart";
+import { BsCartPlusFill } from "react-icons/bs";
+import { BsCartX } from "react-icons/bs";
 
 const ProductCarousel = ({ products }) => {
+  const { addToCart, cart, removeFromCart } = useCart();
+
+  const checkProductInCart = (product) => {
+    return cart.some((item) => item.id === product.id);
+  };
+
   return (
     <section id="carrusel">
       <div className="container">
@@ -36,22 +45,41 @@ const ProductCarousel = ({ products }) => {
             },
           }}
         >
-          {products.map((product, index) => (
-            <SwiperSlide key={index}>
-              <div className="product-card py-3">
-                <img src={product.image} alt={product.name} />
-                <h4>{product.name}</h4>
-                <div className="d-flex justify-content-center align-items-center gap-2 mt-2">
-                  <Button variant="outline-dark">Comprar</Button>
-                  <p className="mb-0">${product.price}</p>
+          {products.map((product, index) => {
+            const isProductInCart = checkProductInCart(product);
+            return (
+              <SwiperSlide key={index}>
+                <div className="product-card py-3">
+                  <img src={product.image} alt={product.name} />
+                  <h4>{product.name}</h4>
+                  <div className="d-flex justify-content-center align-items-center gap-2 mt-2">
+                    <Button
+                      variant={isProductInCart ? "danger" : "dark"}
+                      onClick={() => {
+                        isProductInCart
+                          ? removeFromCart(product)
+                          : addToCart(product);
+                      }}
+                    >
+                      {isProductInCart ? (
+                        <>
+                          <BsCartX /> Quitar
+                        </>
+                      ) : (
+                        <>
+                          <BsCartPlusFill /> Agregar
+                        </>
+                      )}
+                    </Button>
+                    <p className="mb-0">${product.price}</p>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </section>
   );
 };
-
 export default ProductCarousel;
