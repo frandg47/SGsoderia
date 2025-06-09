@@ -3,67 +3,96 @@
     {
       "id": "1",
       "name": "John Doe",
-      "email": "a@a",
+      "email": "admin@example.com",
       "password": "123",
-      "role": "admin"
+      "role": "admin",
+      "createdAt": "2023-01-01T10:00:00Z"
     },
     {
       "id": "2",
-      "name": "Jane Smith",
-      "email": "b@b",
+      "name": "Laura González",
+      "email": "laura@gmail.com",
       "password": "456",
-      "role": "client"
+      "role": "client",
+      "createdAt": "2023-02-10T14:20:00Z"
     },
     {
       "id": "3",
-      "name": "Alice Johnson",
-      "email": "c@c",
+      "name": "Carlos Méndez",
+      "email": "carlos@hotmail.com",
       "password": "789",
-      "role": "client"
+      "role": "client",
+      "createdAt": "2023-03-15T09:30:00Z"
     },
     {
       "id": "4",
-      "name": "Bob Brown",
-      "email": "d@d",
-      "password": "101112",
-      "role": "client"
+      "name": "Héctor Timo",
+      "email": "hector@gmail.com",
+      "password": "123",
+      "role": "client",
+      "createdAt": "2023-04-05T11:45:00Z"
+    },
+    {
+      "id": "5",
+      "name": "Franco Giacobbe",
+      "email": "franco@admin.com",
+      "password": "123",
+      "role": "admin",
+      "createdAt": "2023-01-20T08:10:00Z"
     }
   ],
   "products": [
     {
       "id": "1",
-      "name": "Coca-Cola",
-      "price": 100,
-      "category": "Gaseosas",
+      "name": "Coca-Cola 1.5L",
+      "description": "Botella de plástico retornable de 1.5 litros de Coca-Cola",
+      "price": 2500,
+      "stock": 50,
+      "category": "Gaseosa",
       "image": "/productsimages/cocacola.jpg"
     },
     {
       "id": "2",
-      "name": "Agua Tónica Scheweppes",
-      "price": 200,
-      "category": "Aguas",
+      "name": "Agua Tónica Schweppes 500ml",
+      "description": "Agua tónica en botella de 500 ml con gas y sabor clásico",
+      "price": 700,
+      "stock": 80,
+      "category": "Agua",
       "image": "/productsimages/aguatonica.png"
     },
     {
       "id": "3",
-      "name": "Soda Bretaña",
-      "price": 300,
-      "category": "soda",
+      "name": "Soda Bretaña 1L",
+      "description": "Botella de 1 litro de soda marca Bretaña, ideal para tragos",
+      "price": 450,
+      "stock": 100,
+      "category": "Soda",
       "image": "/productsimages/soda.webp"
     },
     {
       "id": "4",
-      "name": "Soda Costa",
-      "price": 400,
-      "category": "Galletas",
+      "name": "Galletas Costa Soda",
+      "description": "Paquete de 200g de galletas saladas marca Costa",
+      "price": 600,
+      "stock": 40,
+      "category": "Galleta",
       "image": "/productsimages/sodagalleta.webp"
     },
     {
       "id": "d62f",
-      "name": "Soda Cisca",
-      "price": "2500",
-      "category": "soda",
+      "name": "Sifón Cisca 2L",
+      "description": "Sifón de soda recargable de 2 litros, marca Cisca",
+      "price": 2600,
+      "stock": 30,
+      "category": "Soda",
       "image": "/productsimages/sodasifon.jpg"
+    },
+    {
+      "name": "Bidón de Agua 6L",
+      "price": 1200,
+      "category": "Agua",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXsvHLa-QBowBprtZJwU32MzibRyGY9pRYHA&s",
+      "id": "e50a"
     }
   ],
   "ventas": [

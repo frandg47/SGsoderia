@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/hero.css";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -13,9 +12,9 @@ const Hero = () => {
       <div className="hero-content text-center">
         <h1>Refrescá tu día con <br /><span className="highlight">AquaTech</span></h1>
         <p>Las sodas artesanales más frescas y burbujeantes</p>
-        <Link to="/productos" className="btn-hero">
+        <a href="#productos" className="btn-hero">
           Ver productos
-        </Link>
+        </a>
       </div>
     </section>
   );

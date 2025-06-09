@@ -1,6 +1,6 @@
 // src/components/FormCrearProducto.jsx
 import { useState } from 'react';
-import usePost from '../hooks/usePost';
+import {usePost} from '../hooks/usePost';
 
 const FormCrearProducto = () => {
   const postData = usePost();

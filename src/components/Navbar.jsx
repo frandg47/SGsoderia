@@ -38,27 +38,23 @@ const Navbar = () => {
         >
           Inicio
         </Link>
-        <Link
+        {/* <Link
           to="/productos"
           className={isActive("/productos") ? "active-link" : ""}
           onClick={() => setMenuOpen(false)}
         >
           Productos
-        </Link>
-        <Link
-          to={"/clientes"}
-          className="link-button"
-          onClick={() => setMenuOpen(false)}
-        >
-          Clientes
-        </Link>
-        <Link
-          to={"/ventas"}
-          className="link-button"
-          onClick={() => setMenuOpen(false)}
-        >
-          Ventas
-        </Link>
+        </Link> */}
+        {user?.role === "admin" && (
+          <Link
+            to={"/admin"}
+            className={isActive("/admin") || isActive("/admin/ventas") || isActive("/admin/clientes") || isActive("/admin/productos") ? "active-link" : ""}
+            onClick={() => setMenuOpen(false)}
+          >
+            Admin
+          </Link>
+        )}
+
 
         <div className="menu-user-controls d-md-none">
           <span className="user-info d-flex align-items-center">
